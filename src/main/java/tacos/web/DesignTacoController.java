@@ -3,6 +3,7 @@ package tacos.web;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
@@ -59,6 +60,7 @@ public class DesignTacoController {
     }
 
     @PostMapping
+    @PreAuthorize("hasRole('USER')")
     public String processTaco(@Valid Taco taco, Errors errors,
                               @ModelAttribute TacoOrder tacoOrder) {
         if (errors.hasErrors()) {

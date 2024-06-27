@@ -17,7 +17,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 
-@Entity
+@Entity(name = "users")
 @Data
 @NoArgsConstructor(access = AccessLevel.PROTECTED, force = true)
 @RequiredArgsConstructor
