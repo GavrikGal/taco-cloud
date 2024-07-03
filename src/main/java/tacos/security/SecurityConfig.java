@@ -39,7 +39,7 @@ public class SecurityConfig {
          http
                  .authorizeHttpRequests(authz -> authz
                      .requestMatchers("/design", "/orders").hasRole("USER")
-                         .requestMatchers("/", "/**").permitAll()
+                         .requestMatchers("/", "/**", "/api/**").permitAll()
                      .anyRequest().authenticated())
                  .oauth2Login((oauth2) -> oauth2
                          .loginPage("/login")
