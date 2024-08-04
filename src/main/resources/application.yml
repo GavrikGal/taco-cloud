@@ -4,6 +4,9 @@ spring:
   datasource:
     generate-unique-name: false
     name: tacocloud
+  data:
+    rest:
+      base-path: /api
 #    // Переписал конфигурацию безопасности как в репозитории книги,
 #    // чтобы работали POST запросы
 #  security:
@@ -14,6 +17,10 @@ spring:
 #            clientId: 1041524020668107
 #            clientSecret: clientSecret
 #            scope: email, public_profile
-  h2:
-    console:
-      enabled: true
+logging:
+  level:
+    sql: debug
+    web: debug
+    org:
+      springframework:
+        security: debug
