@@ -7,5 +7,5 @@ import tacos.Ingredient;
 
 @CrossOrigin(origins = "http://localhost:8080")
 public interface IngredientRepository
-        extends CrudRepository<Ingredient, Long> {
+        extends CrudRepository<Ingredient, String> {
 }
