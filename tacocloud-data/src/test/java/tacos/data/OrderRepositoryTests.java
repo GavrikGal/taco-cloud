@@ -4,20 +4,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.domain.PageRequest;
 import tacos.Ingredient;
 import tacos.Ingredient.Type;
 import tacos.Taco;
 import tacos.TacoOrder;
 import tacos.User;
-
-import tacos.data.IngredientRepository;
-import tacos.data.OrderRepository;
-import tacos.data.TacoRepository;
-import tacos.data.UserRepository;
-
 
 import java.util.ArrayList;
 import java.util.Arrays;
