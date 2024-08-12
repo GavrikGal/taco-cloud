@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: tacocloud-messaging-jms
+  artemis:
+    broker-url: tcp://localhost:61617
+    user: tacoweb
+    password: l3tm31n
