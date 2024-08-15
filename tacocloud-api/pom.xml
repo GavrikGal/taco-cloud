@@ -31,11 +31,11 @@
 			<artifactId>tacocloud-domain</artifactId>
 			<version>${tacocloud.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>gavrik</groupId>
-			<artifactId>tacocloud-security</artifactId>
-			<version>${tacocloud.version}</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>gavrik</groupId>-->
+<!--			<artifactId>tacocloud-security</artifactId>-->
+<!--			<version>${tacocloud.version}</version>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>gavrik</groupId>
 			<artifactId>tacocloud-messaging-jms</artifactId>
